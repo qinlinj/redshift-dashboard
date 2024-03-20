@@ -53,6 +53,26 @@ button:hover {
     border-bottom: 1px dashed #ccc;
     padding: 10px;
 }
+.label-instructions {
+    font-size: 0.9em;
+    margin: 10px 5px 10px 0;
+    display: inline-block;
+    padding: 10px;
+}
+.label-select-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+select {
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 2px solid #800080;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    margin-left: 10px;
+}
 .back-button {
     display: block;
     width: 200px;

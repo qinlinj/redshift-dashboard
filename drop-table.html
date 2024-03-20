@@ -12,13 +12,31 @@
     <div class="main">
         <h2>Drop Table Function</h2>
         <p class="instructions">Enter the table name in the input field and click the button to delete the table from Redshift.</p>
+
+        <div class="label-select-container">
+            <label for="dbName" class="label-instructions">Choose db name:</label>
+            <select id="dbName">
+                <option value="dev">dev</option>
+                <option value="staging">staging</option>
+            </select>
+        </div>
+
+        <div class="label-select-container">
+            <label for="cluster" class="label-instructions">Choose cluster name:</label>
+            <select id="cluster">
+                <option value="data-lake">data-lake</option>
+                <option value="data-lake-read">data-lake-read</option>
+            </select>
+        </div>
+
         <div class="action-area">
             <input type="text" id="tableName" placeholder="Enter table name">
             <button onclick="confirmDeletion()">Delete Table</button>
         </div>
     </div>
-    <a href="dashborad.html" class="back-button">Back to Main Page</a> 
+    
+    <a href="dashboard.html" class="back-button">Back to Main Page</a> 
 
-    <script src="drop-table.js"></script>
+    <script src="js/drop-table.js"></script>
 </body>
 </html>
